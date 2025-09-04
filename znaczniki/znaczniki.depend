@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1756984544 source:c:\users\egzamin\documents\znaczniki\main.cpp
+	<iostream>
+	<time.h>
+	<stdlib.h>
+
