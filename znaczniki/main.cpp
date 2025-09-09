@@ -4,6 +4,46 @@
 
 using namespace std;
 
+class Tablica{
+    public: int rozmiar = 10;
+    private: int *tab = new int[rozmiar];
+public:
+    void WyeplnijTablice(int miejsce)
+    {
+        cin>>tab[miejsce];
+    }
+    void Wypisywanie(){
+        cout<<"wyswietlona tablica: "<<endl;
+        for(int i=0;i<rozmiar;i++){
+            cout<<tab[i]<<" ";
+        }
+        cout<<endl;
+    }
+private:
+    int Szukaj(int index)
+    {
+        int temp=index];
+        for(index;index<rozmiar;index++){
+            if(tab[temp]<=tab[index]){
+                temp = index;
+            }
+        }
+        return temp;
+    }
+public:
+    void Sortowanie()
+    {
+        int temp1,temp2;
+        for(int i=0;i<rozmiar;i++){
+            temp2 = Szukaj(i);
+            temp1=tab[i];
+            cout<<temp2<<" | "<<tab[temp2]<<" | "<<temp1<<endl;
+            tab[i] = tab[temp2];
+            tab[temp2]=temp1;
+        }
+    }
+};
+
 int main()
 {
     srand(time(NULL));
@@ -74,4 +114,35 @@ int main()
         }
         cout<<endl;
     }
+    int temp = dTab2[0][0];
+    for(int i=0;i<6;i++){
+        for(int j=0;j<3;j++){
+            if(dTab2[i][j]<temp){
+                temp=dTab2[i][j];
+            }
+        }
+    }
+    cout<<endl;
+    cout<<"minimalna wartosc w tablicy wynosi:"<<temp<<endl;
+    cout<<endl;
+    for(int i=0; i<6;i++){
+        delete[] dTab2[i];
+    }
+    delete[] dTab2;
+
+    for(int i=0;i<6;i++){
+        for(int j=0;j<3;j++){
+            cout<<dTab2[i][j]<<" ";
+        }
+        cout<<endl;
+    }
+    Tablica tab2;
+    cout<<"========="<<endl;
+    for(int i=0;i<tab2.rozmiar;i++){
+        cout<<"Podaj wartosc na pozycje "<<i<<": ";
+        tab2.WyeplnijTablice(i);
+    }
+    tab2.Wypisywanie();
+    tab2.Sortowanie();
+    tab2.Wypisywanie();
 }
