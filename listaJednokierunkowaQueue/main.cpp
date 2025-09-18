@@ -12,7 +12,6 @@ Przedmiot *usunZNazwa(Przedmiot *glowa,string nazwaPrzedmiotu)
 {
     Przedmiot *temp = glowa;
     Przedmiot *poprzedni = glowa;
-    temp=glowa;
     while(temp!=NULL)
     {
         if(temp->nazwa==nazwaPrzedmiotu){
@@ -34,7 +33,6 @@ Przedmiot *usunZCena(Przedmiot *glowa,int cenaPrzedmiotu)
 {
     Przedmiot *temp = glowa;
     Przedmiot *poprzedni = glowa;
-    temp=glowa;
     while(temp!=NULL)
     {
         if(temp->cena==cenaPrzedmiotu){
