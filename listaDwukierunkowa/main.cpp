@@ -2,60 +2,85 @@
 
 using namespace std;
 
-struct Uczen{
-    string imie;
-    int wzrost;
-    Uczen *nastepny;
-    Uczen *poprzedni;
+struct Student{
+    string name;
+    int height;
+    Student *next;
+    Student *prev;
 };
+
+void writeHigherStudents(Student *head)
+{
+    Student *temp = head;
+    Student *tempNext;
+    Student *tempPrev;
+    while(temp!=NULL){
+        tempNext = temp->next;
+        tempPrev = temp->prev;
+
+        if(tempPrev==NULL && tempNext!=NULL){
+            if(temp->height>tempNext->height){
+                cout<<temp->name<<" | "<<temp->height<<"cm"<<endl;
+            }
+        }else if(tempPrev!=NULL && tempNext==NULL){
+            if(temp->height>tempPrev->height){
+                cout<<temp->name<<" | "<<temp->height<<"cm"<<endl;
+            }
+        }else if(tempPrev!=NULL && tempNext!=NULL){
+            if(temp->height > tempPrev->height &&
+            temp->height > tempNext->height){
+                cout<<temp->name<<" | "<<temp->height<<"cm"<<endl;
+            }
+        }
+        temp=temp->next;
+    }
+}
 
 int main()
 {
-    Uczen *glowa = NULL;
-    Uczen *nowy;
+    Student *head = NULL;
+    Student *newStudent;
 
     char c;
     do{
         try{
-            nowy = new Uczen();
+            newStudent = new Student();
         }catch(bad_alloc){
             cout<<"Brakuje miejsca w liscie"<<endl;
             break;
         }
         cout<<"Podaj imie ucznia: ";
-        cin>>nowy->imie;
+        cin>>newStudent->name;
         cout<<"Podaj wzrost ucznia (w cm): ";
-        cin>>nowy->wzrost;
+        cin>>newStudent->height;
 
-        if(glowa==NULL){
-            nowy->nastepny=NULL;
-            nowy->poprzedni=NULL;
-            glowa=nowy;
+        if(head==NULL){
+            newStudent->next=NULL;
+            newStudent->prev=NULL;
+            head=newStudent;
         }else{
-            Uczen *temp = glowa;
-            while(temp->nastepny!=NULL){
-                temp=temp->nastepny;
+            Student *temp = head;
+            while(temp->next!=NULL){
+                temp=temp->next;
             }
-            temp->nastepny=nowy;
-            nowy->poprzedni=temp;
+            temp->next=newStudent;
+            newStudent->prev=temp;
         }
 
         cout<<"Czy chcesz dodac nastepnego ucznia? - t/n  ";
         cin>>c;
     }while(c!='n');
-
-    Uczen *temp = glowa;
-    while(temp!=NULL){
-        cout<<temp->imie<<" | "<<temp->wzrost<<"cm"<<endl;
-        temp=temp->nastepny;
-    }
     cout<<endl;
 
-    temp=nowy;
+    Student *temp = head;
     while(temp!=NULL){
-        cout<<temp->imie<<" | "<<temp->wzrost<<"cm"<<endl;
-        temp=temp->poprzedni;
+        cout<<temp->name<<" | "<<temp->height<<"cm"<<endl;
+        temp=temp->next;
     }
+    cout<<endl;
+    writeHigherStudents(head);
+
+
 
 
     return 0;
