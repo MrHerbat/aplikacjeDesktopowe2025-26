@@ -1,0 +1,11 @@
+Z:\aplikacjeDesktopowe2025-26\Tablica\bin\Debug\Tablica.exe.config
+Z:\aplikacjeDesktopowe2025-26\Tablica\bin\Debug\Tablica.exe
+Z:\aplikacjeDesktopowe2025-26\Tablica\bin\Debug\Tablica.pdb
+Z:\aplikacjeDesktopowe2025-26\Tablica\obj\Debug\Tablica.csproj.AssemblyReference.cache
+Z:\aplikacjeDesktopowe2025-26\Tablica\obj\Debug\Tablica.Form1.resources
+Z:\aplikacjeDesktopowe2025-26\Tablica\obj\Debug\Tablica.Properties.Resources.resources
+Z:\aplikacjeDesktopowe2025-26\Tablica\obj\Debug\Tablica.csproj.GenerateResource.cache
+Z:\aplikacjeDesktopowe2025-26\Tablica\obj\Debug\Tablica.csproj.CoreCompileInputs.cache
+Z:\aplikacjeDesktopowe2025-26\Tablica\obj\Debug\Tablica.exe
+Z:\aplikacjeDesktopowe2025-26\Tablica\obj\Debug\Tablica.pdb
+Z:\aplikacjeDesktopowe2025-26\Tablica\obj\Debug\Tablica.exe.config
