@@ -175,5 +175,37 @@ namespace Tablica
 
             for (int idx = left; idx <= right; idx++) arr[idx] = aux[idx];
         }
+
+        private void quicksort_onClick(object sender, EventArgs e)
+        {
+            quickSort(array, 0, array.Length - 1);
+            for (int i = 0; i < array.Length; i++)
+            {
+                dataGridView2.Rows[0].Cells[i].Value = array[i];
+            }
+            dataGridView2.Visible = true;
+            button5.Visible = true;
+            label2.Visible = true;
+            textBox2.Visible = true;
+        }
+        private static void quickSort(int[] array, int left, int right)
+        {
+            int p = left, q = right, v = left + (right-left)/2;
+            do
+            {
+                while (array[p] < array[v]) p++;
+                while (array[q] > array[v]) q--;
+                if (p <= q)
+                {
+                    int temp = array[p];
+                    array[p] = array[q];
+                    array[q] = temp;
+                    p++;
+                    q--;
+                }
+            }while (p <= q) ;
+            if (left < q) quickSort(array, left, q);
+            if (p < right) quickSort(array, p, right);
+        }
     }
 }

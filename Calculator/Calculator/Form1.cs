@@ -166,11 +166,7 @@ namespace Calculator
                 float x = float.Parse(liczbaA.Text.Replace('.', ','));
                 int y = (int)Math.Round(float.Parse(liczbaB.Text.Replace('.', ',')));
 
-                suma = 1;
-                for(int i = 1; i <= y; i++)
-                {
-                    suma *= x;
-                }
+                suma = (float)Math.Pow(x,y);
                 wynik.Text = suma.ToString();
             }
         }

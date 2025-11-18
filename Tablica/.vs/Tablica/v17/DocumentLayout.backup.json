@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "Z:\\aplikacjeDesktopowe2025-26\\Tablica\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{61E151A5-D969-4118-ACA4-D63DE26F7093}|Tablica.csproj|z:\\aplikacjedesktopowe2025-26\\tablica\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{61E151A5-D969-4118-ACA4-D63DE26F7093}|Tablica.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{61E151A5-D969-4118-ACA4-D63DE26F7093}|Tablica.csproj|Z:\\aplikacjeDesktopowe2025-26\\Tablica\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{61E151A5-D969-4118-ACA4-D63DE26F7093}|Tablica.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61E151A5-D969-4118-ACA4-D63DE26F7093}|Tablica.csproj|z:\\aplikacjedesktopowe2025-26\\tablica\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61E151A5-D969-4118-ACA4-D63DE26F7093}|Tablica.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,11 +18,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Form1.cs [Projekt]",
               "DocumentMoniker": "Z:\\aplikacjeDesktopowe2025-26\\Tablica\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
@@ -34,13 +34,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs",
               "DocumentMoniker": "Z:\\aplikacjeDesktopowe2025-26\\Tablica\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "Z:\\aplikacjeDesktopowe2025-26\\Tablica\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAHUAAAAAAAAAAAAowIcAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAKQAAAAAAAAAAAAwwLQAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-30T11:09:33.679Z",
               "EditorCaption": ""
