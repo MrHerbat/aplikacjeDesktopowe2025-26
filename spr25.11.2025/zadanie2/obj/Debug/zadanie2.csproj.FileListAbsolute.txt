@@ -1,0 +1,11 @@
+C:\Users\Uczeń\Desktop\MaciejLeśniak4PR\zadanie2\bin\Debug\zadanie2.exe.config
+C:\Users\Uczeń\Desktop\MaciejLeśniak4PR\zadanie2\bin\Debug\zadanie2.exe
+C:\Users\Uczeń\Desktop\MaciejLeśniak4PR\zadanie2\bin\Debug\zadanie2.pdb
+C:\Users\Uczeń\Desktop\MaciejLeśniak4PR\zadanie2\obj\Debug\zadanie2.csproj.AssemblyReference.cache
+C:\Users\Uczeń\Desktop\MaciejLeśniak4PR\zadanie2\obj\Debug\zadanie2.Form1.resources
+C:\Users\Uczeń\Desktop\MaciejLeśniak4PR\zadanie2\obj\Debug\zadanie2.Properties.Resources.resources
+C:\Users\Uczeń\Desktop\MaciejLeśniak4PR\zadanie2\obj\Debug\zadanie2.csproj.GenerateResource.cache
+C:\Users\Uczeń\Desktop\MaciejLeśniak4PR\zadanie2\obj\Debug\zadanie2.csproj.CoreCompileInputs.cache
+C:\Users\Uczeń\Desktop\MaciejLeśniak4PR\zadanie2\obj\Debug\zadanie2.exe
+C:\Users\Uczeń\Desktop\MaciejLeśniak4PR\zadanie2\obj\Debug\zadanie2.pdb
+C:\Users\Uczeń\Desktop\MaciejLeśniak4PR\zadanie2\obj\Debug\zadanie2.exe.config
