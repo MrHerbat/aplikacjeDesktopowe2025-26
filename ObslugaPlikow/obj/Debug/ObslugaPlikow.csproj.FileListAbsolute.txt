@@ -1,0 +1,11 @@
+Z:\aplikacjeDesktopowe2025-26\ObslugaPlikow\obj\Debug\ObslugaPlikow.csproj.AssemblyReference.cache
+Z:\aplikacjeDesktopowe2025-26\ObslugaPlikow\obj\Debug\ObslugaPlikow.Form1.resources
+Z:\aplikacjeDesktopowe2025-26\ObslugaPlikow\obj\Debug\ObslugaPlikow.Properties.Resources.resources
+Z:\aplikacjeDesktopowe2025-26\ObslugaPlikow\obj\Debug\ObslugaPlikow.csproj.GenerateResource.cache
+Z:\aplikacjeDesktopowe2025-26\ObslugaPlikow\obj\Debug\ObslugaPlikow.csproj.CoreCompileInputs.cache
+Z:\aplikacjeDesktopowe2025-26\ObslugaPlikow\bin\Debug\ObslugaPlikow.exe.config
+Z:\aplikacjeDesktopowe2025-26\ObslugaPlikow\bin\Debug\ObslugaPlikow.exe
+Z:\aplikacjeDesktopowe2025-26\ObslugaPlikow\bin\Debug\ObslugaPlikow.pdb
+Z:\aplikacjeDesktopowe2025-26\ObslugaPlikow\obj\Debug\ObslugaPlikow.exe
+Z:\aplikacjeDesktopowe2025-26\ObslugaPlikow\obj\Debug\ObslugaPlikow.pdb
+Z:\aplikacjeDesktopowe2025-26\ObslugaPlikow\obj\Debug\ObslugaPlikow.exe.config

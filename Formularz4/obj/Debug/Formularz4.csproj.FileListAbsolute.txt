@@ -1,0 +1,11 @@
+Z:\aplikacjeDesktopowe2025-26\Formularz4\bin\Debug\Formularz4.exe.config
+Z:\aplikacjeDesktopowe2025-26\Formularz4\bin\Debug\Formularz4.exe
+Z:\aplikacjeDesktopowe2025-26\Formularz4\bin\Debug\Formularz4.pdb
+Z:\aplikacjeDesktopowe2025-26\Formularz4\obj\Debug\Formularz4.csproj.AssemblyReference.cache
+Z:\aplikacjeDesktopowe2025-26\Formularz4\obj\Debug\Formularz4.Form1.resources
+Z:\aplikacjeDesktopowe2025-26\Formularz4\obj\Debug\Formularz4.Properties.Resources.resources
+Z:\aplikacjeDesktopowe2025-26\Formularz4\obj\Debug\Formularz4.csproj.GenerateResource.cache
+Z:\aplikacjeDesktopowe2025-26\Formularz4\obj\Debug\Formularz4.csproj.CoreCompileInputs.cache
+Z:\aplikacjeDesktopowe2025-26\Formularz4\obj\Debug\Formularz4.exe
+Z:\aplikacjeDesktopowe2025-26\Formularz4\obj\Debug\Formularz4.pdb
+Z:\aplikacjeDesktopowe2025-26\Formularz4\obj\Debug\Formularz4.exe.config
