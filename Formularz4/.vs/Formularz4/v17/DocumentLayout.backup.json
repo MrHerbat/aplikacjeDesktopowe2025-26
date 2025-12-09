@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "Z:\\aplikacjeDesktopowe2025-26\\Formularz4\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8E4E8938-D7F0-4CFE-BFEB-27CA9F8BFE77}|Formularz4.csproj|z:\\aplikacjedesktopowe2025-26\\formularz4\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8E4E8938-D7F0-4CFE-BFEB-27CA9F8BFE77}|Formularz4.csproj|z:\\aplikacjedesktopowe2025-26\\formularz4\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E4E8938-D7F0-4CFE-BFEB-27CA9F8BFE77}|Formularz4.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E4E8938-D7F0-4CFE-BFEB-27CA9F8BFE77}|Formularz4.csproj|Z:\\aplikacjeDesktopowe2025-26\\Formularz4\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E4E8938-D7F0-4CFE-BFEB-27CA9F8BFE77}|Formularz4.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E4E8938-D7F0-4CFE-BFEB-27CA9F8BFE77}|Formularz4.csproj|Z:\\aplikacjeDesktopowe2025-26\\Formularz4\\wyniki.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{8E4E8938-D7F0-4CFE-BFEB-27CA9F8BFE77}|Formularz4.csproj|solutionrelative:wyniki.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E4E8938-D7F0-4CFE-BFEB-27CA9F8BFE77}|Formularz4.csproj|Z:\\aplikacjeDesktopowe2025-26\\Formularz4\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8E4E8938-D7F0-4CFE-BFEB-27CA9F8BFE77}|Formularz4.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8E4E8938-D7F0-4CFE-BFEB-27CA9F8BFE77}|Formularz4.csproj|Z:\\aplikacjeDesktopowe2025-26\\Formularz4\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{8E4E8938-D7F0-4CFE-BFEB-27CA9F8BFE77}|Formularz4.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E4E8938-D7F0-4CFE-BFEB-27CA9F8BFE77}|Formularz4.csproj|z:\\aplikacjedesktopowe2025-26\\formularz4\\wyniki.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{8E4E8938-D7F0-4CFE-BFEB-27CA9F8BFE77}|Formularz4.csproj|solutionrelative:wyniki.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,8 +30,33 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form2.cs",
+              "DocumentMoniker": "Z:\\aplikacjeDesktopowe2025-26\\Formularz4\\Form2.cs",
+              "RelativeDocumentMoniker": "Form2.cs",
+              "ToolTip": "Z:\\aplikacjeDesktopowe2025-26\\Formularz4\\Form2.cs",
+              "RelativeToolTip": "Form2.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwCoAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T11:31:41.824Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form2.cs [Projekt]",
+              "DocumentMoniker": "Z:\\aplikacjeDesktopowe2025-26\\Formularz4\\Form2.cs",
+              "RelativeDocumentMoniker": "Form2.cs",
+              "ToolTip": "Z:\\aplikacjeDesktopowe2025-26\\Formularz4\\Form2.cs [Projekt]",
+              "RelativeToolTip": "Form2.cs [Projekt]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T11:30:07.571Z",
+              "EditorCaption": " [Projekt]"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -32,27 +65,27 @@
               "RelativeDocumentMoniker": "wyniki.txt",
               "ToolTip": "Z:\\aplikacjeDesktopowe2025-26\\Formularz4\\wyniki.txt",
               "RelativeToolTip": "wyniki.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
               "WhenOpened": "2025-12-02T07:25:36.892Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs",
               "DocumentMoniker": "Z:\\aplikacjeDesktopowe2025-26\\Formularz4\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "Z:\\aplikacjeDesktopowe2025-26\\Formularz4\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAIAAAAAAAAAAAADwv44AAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAJgAAAAAAAAAAAAAwLQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-27T11:06:29.724Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Form1.cs [Projekt]",
               "DocumentMoniker": "Z:\\aplikacjeDesktopowe2025-26\\Formularz4\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",

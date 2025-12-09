@@ -51,7 +51,7 @@ namespace ObslugaPlikow
 
                 try
                 {
-                    File.AppendAllText(path+"\n", textBox1.Text);
+                    File.AppendAllText(path, textBox1.Text+"\n");
                     MessageBox.Show("Zapisano zawartość do pliku");
                 }
                 catch (Exception ex)

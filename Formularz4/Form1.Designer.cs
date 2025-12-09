@@ -37,6 +37,7 @@
             this.prędkośćToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.drogaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.czasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.testToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.potential_groupBox = new System.Windows.Forms.GroupBox();
             this.potential = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
@@ -48,7 +49,6 @@
             this.mass_textBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.testToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.mass_textBox2 = new System.Windows.Forms.TextBox();
@@ -71,10 +71,16 @@
             this.rjp_textBox1 = new System.Windows.Forms.TextBox();
             this.rjp_b = new System.Windows.Forms.Label();
             this.rjp_a = new System.Windows.Forms.Label();
+            this.test_wyniki = new System.Windows.Forms.GroupBox();
+            this.nazwisko_textBox = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.search = new System.Windows.Forms.Button();
+            this.wynik_textBox = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.potential_groupBox.SuspendLayout();
             this.kinetic_groupBox.SuspendLayout();
             this.jednostajny_groupBox.SuspendLayout();
+            this.test_wyniki.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -84,7 +90,7 @@
             this.testToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(355, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -96,7 +102,6 @@
             this.obliczeniaToolStripMenuItem.Name = "obliczeniaToolStripMenuItem";
             this.obliczeniaToolStripMenuItem.Size = new System.Drawing.Size(74, 20);
             this.obliczeniaToolStripMenuItem.Text = "Obliczenia";
-            this.obliczeniaToolStripMenuItem.Click += new System.EventHandler(this.obliczeniaToolStripMenuItem_Click);
             // 
             // energiaToolStripMenuItem
             // 
@@ -110,14 +115,14 @@
             // potencjalnaToolStripMenuItem
             // 
             this.potencjalnaToolStripMenuItem.Name = "potencjalnaToolStripMenuItem";
-            this.potencjalnaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.potencjalnaToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.potencjalnaToolStripMenuItem.Text = "Potencjalna";
             this.potencjalnaToolStripMenuItem.Click += new System.EventHandler(this.potencjalnaToolStripMenuItem_Click);
             // 
             // kinetycznaToolStripMenuItem
             // 
             this.kinetycznaToolStripMenuItem.Name = "kinetycznaToolStripMenuItem";
-            this.kinetycznaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.kinetycznaToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.kinetycznaToolStripMenuItem.Text = "Kinetyczna";
             this.kinetycznaToolStripMenuItem.Click += new System.EventHandler(this.kinetycznaToolStripMenuItem_Click);
             // 
@@ -134,23 +139,30 @@
             // prędkośćToolStripMenuItem
             // 
             this.prędkośćToolStripMenuItem.Name = "prędkośćToolStripMenuItem";
-            this.prędkośćToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.prędkośćToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.prędkośćToolStripMenuItem.Text = "Prędkość";
             this.prędkośćToolStripMenuItem.Click += new System.EventHandler(this.prędkośćToolStripMenuItem_Click);
             // 
             // drogaToolStripMenuItem
             // 
             this.drogaToolStripMenuItem.Name = "drogaToolStripMenuItem";
-            this.drogaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.drogaToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.drogaToolStripMenuItem.Text = "Droga";
             this.drogaToolStripMenuItem.Click += new System.EventHandler(this.drogaToolStripMenuItem_Click);
             // 
             // czasToolStripMenuItem
             // 
             this.czasToolStripMenuItem.Name = "czasToolStripMenuItem";
-            this.czasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.czasToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.czasToolStripMenuItem.Text = "Czas";
             this.czasToolStripMenuItem.Click += new System.EventHandler(this.czasToolStripMenuItem_Click);
+            // 
+            // testToolStripMenuItem
+            // 
+            this.testToolStripMenuItem.Name = "testToolStripMenuItem";
+            this.testToolStripMenuItem.Size = new System.Drawing.Size(40, 20);
+            this.testToolStripMenuItem.Text = "Test";
+            this.testToolStripMenuItem.Click += new System.EventHandler(this.testToolStripMenuItem_Click);
             // 
             // potential_groupBox
             // 
@@ -257,12 +269,6 @@
             this.label1.Size = new System.Drawing.Size(63, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Masa ciała:";
-            // 
-            // testToolStripMenuItem
-            // 
-            this.testToolStripMenuItem.Name = "testToolStripMenuItem";
-            this.testToolStripMenuItem.Size = new System.Drawing.Size(40, 20);
-            this.testToolStripMenuItem.Text = "Test";
             // 
             // label13
             // 
@@ -476,11 +482,61 @@
             this.rjp_a.TabIndex = 0;
             this.rjp_a.Text = "Czas:";
             // 
+            // test_wyniki
+            // 
+            this.test_wyniki.Controls.Add(this.wynik_textBox);
+            this.test_wyniki.Controls.Add(this.search);
+            this.test_wyniki.Controls.Add(this.label7);
+            this.test_wyniki.Controls.Add(this.nazwisko_textBox);
+            this.test_wyniki.Location = new System.Drawing.Point(13, 205);
+            this.test_wyniki.Name = "test_wyniki";
+            this.test_wyniki.Size = new System.Drawing.Size(263, 107);
+            this.test_wyniki.TabIndex = 13;
+            this.test_wyniki.TabStop = false;
+            this.test_wyniki.Text = "Wyniki";
+            this.test_wyniki.Visible = false;
+            // 
+            // nazwisko_textBox
+            // 
+            this.nazwisko_textBox.Location = new System.Drawing.Point(157, 19);
+            this.nazwisko_textBox.Name = "nazwisko_textBox";
+            this.nazwisko_textBox.Size = new System.Drawing.Size(100, 20);
+            this.nazwisko_textBox.TabIndex = 0;
+            // 
+            // label7
+            // 
+            this.label7.AutoEllipsis = true;
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(48, 22);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(103, 13);
+            this.label7.TabIndex = 1;
+            this.label7.Text = "Wyszukaj nazwisko:";
+            // 
+            // search
+            // 
+            this.search.Location = new System.Drawing.Point(157, 45);
+            this.search.Name = "search";
+            this.search.Size = new System.Drawing.Size(75, 23);
+            this.search.TabIndex = 2;
+            this.search.Text = "Szukaj";
+            this.search.UseVisualStyleBackColor = true;
+            this.search.Click += new System.EventHandler(this.search_Click);
+            // 
+            // wynik_textBox
+            // 
+            this.wynik_textBox.Location = new System.Drawing.Point(18, 74);
+            this.wynik_textBox.Name = "wynik_textBox";
+            this.wynik_textBox.ReadOnly = true;
+            this.wynik_textBox.Size = new System.Drawing.Size(239, 20);
+            this.wynik_textBox.TabIndex = 3;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(355, 380);
+            this.Controls.Add(this.test_wyniki);
             this.Controls.Add(this.jednostajny_groupBox);
             this.Controls.Add(this.kinetic_groupBox);
             this.Controls.Add(this.potential_groupBox);
@@ -496,6 +552,8 @@
             this.kinetic_groupBox.PerformLayout();
             this.jednostajny_groupBox.ResumeLayout(false);
             this.jednostajny_groupBox.PerformLayout();
+            this.test_wyniki.ResumeLayout(false);
+            this.test_wyniki.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -546,6 +604,11 @@
         private System.Windows.Forms.TextBox rjp_textBox1;
         private System.Windows.Forms.Label rjp_b;
         private System.Windows.Forms.Label rjp_a;
+        private System.Windows.Forms.GroupBox test_wyniki;
+        private System.Windows.Forms.TextBox wynik_textBox;
+        private System.Windows.Forms.Button search;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox nazwisko_textBox;
     }
 }
 

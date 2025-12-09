@@ -9,3 +9,4 @@ Z:\aplikacjeDesktopowe2025-26\Formularz4\obj\Debug\Formularz4.csproj.CoreCompile
 Z:\aplikacjeDesktopowe2025-26\Formularz4\obj\Debug\Formularz4.exe
 Z:\aplikacjeDesktopowe2025-26\Formularz4\obj\Debug\Formularz4.pdb
 Z:\aplikacjeDesktopowe2025-26\Formularz4\obj\Debug\Formularz4.exe.config
+Z:\aplikacjeDesktopowe2025-26\Formularz4\obj\Debug\Formularz4.Form2.resources

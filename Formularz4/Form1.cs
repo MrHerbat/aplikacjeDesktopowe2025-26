@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Formularz4
 {
@@ -45,11 +46,6 @@ namespace Formularz4
                 }
                     
             }
-        }
-
-        private void obliczeniaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            
         }
 
         private void kinetycznaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -155,6 +151,34 @@ namespace Formularz4
                 }
             }
         }
-        
+
+        private void testToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            test_wyniki.Visible = true;
+            nazwisko_textBox.Enabled = true;
+            search.Enabled = true;
+        }
+
+        private void search_Click(object sender, EventArgs e)
+        {
+            string nazwisko = nazwisko_textBox.Text;
+            var file = File.OpenRead("../../wyniki.txt");
+            var sr = new StreamReader(file);
+            string line = sr.ReadLine();
+            while (line != null)
+            {
+                if (line.Contains(nazwisko))
+                {
+                    wynik_textBox.Text = line;
+                    return;
+                }
+                line = sr.ReadLine();
+            }
+            wynik_textBox.Text = "Jeszcze nie ukończyłeś testu!";
+            sr.Close();
+            Form2 form = new Form2();
+            form.surname = nazwisko;
+            form.Show();
+        }
     }
 }
