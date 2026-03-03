@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Threading;
 
 namespace Formularz4
 {
@@ -16,14 +17,24 @@ namespace Formularz4
     {
         private readonly float g = 9.81f;
         private int ruchChoice;
+        Form2 form = new Form2();
         public Form1()
         {
             InitializeComponent();
+            this.BackColor = Color.Cornsilk;
+            redScroll.Value = 255;
+            greenScroll.Value = 255;
+            blueScroll.Value = 255;
+            redValue.Text = redScroll.Value.ToString();
+            greenValue.Text = greenScroll.Value.ToString();
+            blueValue.Text = blueScroll.Value.ToString();
+            panel2.Paint += new PaintEventHandler(drawStaticPanel);
         }
 
         private void potencjalnaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             potential_groupBox.Visible = true;
+            colorGroupBox.Visible = false;
             kinetic_groupBox.Visible = false;
             jednostajny_groupBox.Visible = false;
         }
@@ -51,8 +62,9 @@ namespace Formularz4
         private void kinetycznaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             potential_groupBox.Visible = false;
+            colorGroupBox.Visible = false;
             kinetic_groupBox.Visible = true;
-            jednostajny_groupBox.Visible = false;        
+            jednostajny_groupBox.Visible = false;
         }
 
         private void kinetyczna_Click(object sender, EventArgs e)
@@ -80,6 +92,7 @@ namespace Formularz4
         {
             potential_groupBox.Visible = false;
             kinetic_groupBox.Visible = false;
+            colorGroupBox.Visible = false;
             jednostajny_groupBox.Visible = true;
             ruchChoice = 1;
             rjp_a.Text = "Czas:";
@@ -95,6 +108,7 @@ namespace Formularz4
             potential_groupBox.Visible = false;
             kinetic_groupBox.Visible = false;
             jednostajny_groupBox.Visible = true;
+            colorGroupBox.Visible = false;
             ruchChoice = 2;
             rjp_a.Text = "Czas:";
             rjp_a_label.Text = "s";
@@ -109,6 +123,7 @@ namespace Formularz4
             potential_groupBox.Visible = false;
             kinetic_groupBox.Visible = false;
             jednostajny_groupBox.Visible = true;
+            colorGroupBox.Visible = false;
             ruchChoice = 3;
             rjp_a.Text = "Prędkość:";
             rjp_a_label.Text = "m/s";
@@ -159,26 +174,111 @@ namespace Formularz4
             search.Enabled = true;
         }
 
-        private void search_Click(object sender, EventArgs e)
+        public void search_Click(object sender, EventArgs e)
         {
             string nazwisko = nazwisko_textBox.Text;
+            string found = searchFile(nazwisko);
+            if (!string.IsNullOrEmpty(found)){
+                wynik_textBox.Text = found;
+            }
+            else
+            {
+                wynik_textBox.Text = "Jeszcze nie ukończyłeś testu!";
+                Form2 form = new Form2();
+                form.surname = nazwisko;
+                this.Opacity = 0;
+                form.Show();
+            }
+        }
+        public string searchFile(string surname)
+        {
             var file = File.OpenRead("../../wyniki.txt");
             var sr = new StreamReader(file);
             string line = sr.ReadLine();
             while (line != null)
             {
-                if (line.Contains(nazwisko))
+                string temp = line.Split(' ')[0];
+                if (temp.Equals(surname))
                 {
                     wynik_textBox.Text = line;
-                    return;
+                    sr.Close();
+                    return line;
                 }
                 line = sr.ReadLine();
             }
-            wynik_textBox.Text = "Jeszcze nie ukończyłeś testu!";
             sr.Close();
-            Form2 form = new Form2();
-            form.surname = nazwisko;
-            form.Show();
+            return null;
+        }
+
+        private void wybórKoloruToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            potential_groupBox.Visible = false;
+            kinetic_groupBox.Visible = false;
+            jednostajny_groupBox.Visible = false;
+            colorGroupBox.Visible = true;
+            panelColorChange(255,255,255);
+        }
+        private void scrollValueChanged(object sender, EventArgs e)
+        {
+            redValue.Text = redScroll.Value.ToString();
+            greenValue.Text = greenScroll.Value.ToString();
+            blueValue.Text = blueScroll.Value.ToString();
+        }
+        private void numericValueChanged(object sender, EventArgs e)
+        {
+            redScroll.Value = Int16.Parse(redValue.Value.ToString());
+            greenScroll.Value = Int16.Parse(greenValue.Value.ToString());
+            blueScroll.Value = Int16.Parse(blueValue.Value.ToString());
+        }
+        private void setPanelColor(object sender,EventArgs e)
+        {
+            panelColorChange(redScroll.Value, greenScroll.Value, blueScroll.Value);
+            label14.BackColor = Color.FromArgb(redScroll.Value, greenScroll.Value, blueScroll.Value);
+            label14.Text = (redScroll.Value.ToString()+", "+greenScroll.Value.ToString()+", "+blueScroll.Value.ToString());
+        }
+        private void panelColorChange(int r, int g, int b)
+        {
+            Color color = Color.FromArgb(r, g, b);
+            panel1.BackColor = color;
+        }
+        
+        private void drawRect(int xPos, int yPos, PaintEventArgs e)
+        {
+            var d = e.Graphics;
+            Brush b = new SolidBrush(Color.Black);
+            d.FillRectangle(b, new Rectangle(xPos, yPos,40,40));
+            b.Dispose();
+        }
+        private void drawLine(int xPos1, int yPos1,int xPos2, int yPos2, PaintEventArgs e)
+        {
+            var d = e.Graphics;
+            Pen p = new Pen(Color.Black,2);
+            d.DrawLine(p, new Point(xPos1, yPos1), new Point(xPos2, yPos2));
+        }
+        private void drawStaticPanel(object sender, PaintEventArgs e)
+        {
+            drawRect((panel2.Width/2)-20, 10,e);
+            drawLine(0, 300, 400, 300, e);
+        }
+        private void drawAnimatedPanel(object sender, PaintEventArgs e)
+        {
+            var d = e.Graphics;
+            int height = 50;
+            while (height <= 300)
+            {
+                drawRect((panel2.Width / 2) - 20, height-40, e);
+                drawLine(0, 300, 400, 300, e);
+                d.Clear(Color.White);
+                panel2.Refresh();
+                height += 25;
+                Thread.Sleep(200);
+            }
+        }
+
+        private void graphicButton_Click(object sender, EventArgs e)
+        {
+            panel2.Paint += new PaintEventHandler(drawAnimatedPanel);
+            panel2.Refresh();
         }
     }
 }

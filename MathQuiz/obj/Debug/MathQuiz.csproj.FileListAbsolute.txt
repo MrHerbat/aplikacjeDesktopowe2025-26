@@ -1,0 +1,11 @@
+Z:\aplikacjeDesktopowe2025-26\MathQuiz\bin\Debug\MathQuiz.exe.config
+Z:\aplikacjeDesktopowe2025-26\MathQuiz\bin\Debug\MathQuiz.exe
+Z:\aplikacjeDesktopowe2025-26\MathQuiz\bin\Debug\MathQuiz.pdb
+Z:\aplikacjeDesktopowe2025-26\MathQuiz\obj\Debug\MathQuiz.csproj.AssemblyReference.cache
+Z:\aplikacjeDesktopowe2025-26\MathQuiz\obj\Debug\MathQuiz.Form1.resources
+Z:\aplikacjeDesktopowe2025-26\MathQuiz\obj\Debug\MathQuiz.Properties.Resources.resources
+Z:\aplikacjeDesktopowe2025-26\MathQuiz\obj\Debug\MathQuiz.csproj.GenerateResource.cache
+Z:\aplikacjeDesktopowe2025-26\MathQuiz\obj\Debug\MathQuiz.csproj.CoreCompileInputs.cache
+Z:\aplikacjeDesktopowe2025-26\MathQuiz\obj\Debug\MathQuiz.exe
+Z:\aplikacjeDesktopowe2025-26\MathQuiz\obj\Debug\MathQuiz.pdb
+Z:\aplikacjeDesktopowe2025-26\MathQuiz\obj\Debug\MathQuiz.exe.config

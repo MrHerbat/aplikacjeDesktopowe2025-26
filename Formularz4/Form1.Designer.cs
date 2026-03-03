@@ -38,6 +38,7 @@
             this.drogaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.czasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.testToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.wybórKoloruToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.potential_groupBox = new System.Windows.Forms.GroupBox();
             this.potential = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
@@ -72,25 +73,46 @@
             this.rjp_b = new System.Windows.Forms.Label();
             this.rjp_a = new System.Windows.Forms.Label();
             this.test_wyniki = new System.Windows.Forms.GroupBox();
-            this.nazwisko_textBox = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.search = new System.Windows.Forms.Button();
             this.wynik_textBox = new System.Windows.Forms.TextBox();
+            this.search = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.nazwisko_textBox = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.redLabel = new System.Windows.Forms.Label();
+            this.greenLabel = new System.Windows.Forms.Label();
+            this.blueLabel = new System.Windows.Forms.Label();
+            this.redValue = new System.Windows.Forms.NumericUpDown();
+            this.greenValue = new System.Windows.Forms.NumericUpDown();
+            this.blueValue = new System.Windows.Forms.NumericUpDown();
+            this.redScroll = new System.Windows.Forms.HScrollBar();
+            this.greenScroll = new System.Windows.Forms.HScrollBar();
+            this.blueScroll = new System.Windows.Forms.HScrollBar();
+            this.setColor = new System.Windows.Forms.Button();
+            this.colorGroupBox = new System.Windows.Forms.GroupBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.graphicButton = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.potential_groupBox.SuspendLayout();
             this.kinetic_groupBox.SuspendLayout();
             this.jednostajny_groupBox.SuspendLayout();
             this.test_wyniki.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.redValue)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.greenValue)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.blueValue)).BeginInit();
+            this.colorGroupBox.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.obliczeniaToolStripMenuItem,
-            this.testToolStripMenuItem});
+            this.testToolStripMenuItem,
+            this.wybórKoloruToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(355, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(777, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -115,14 +137,14 @@
             // potencjalnaToolStripMenuItem
             // 
             this.potencjalnaToolStripMenuItem.Name = "potencjalnaToolStripMenuItem";
-            this.potencjalnaToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.potencjalnaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.potencjalnaToolStripMenuItem.Text = "Potencjalna";
             this.potencjalnaToolStripMenuItem.Click += new System.EventHandler(this.potencjalnaToolStripMenuItem_Click);
             // 
             // kinetycznaToolStripMenuItem
             // 
             this.kinetycznaToolStripMenuItem.Name = "kinetycznaToolStripMenuItem";
-            this.kinetycznaToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.kinetycznaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.kinetycznaToolStripMenuItem.Text = "Kinetyczna";
             this.kinetycznaToolStripMenuItem.Click += new System.EventHandler(this.kinetycznaToolStripMenuItem_Click);
             // 
@@ -163,6 +185,13 @@
             this.testToolStripMenuItem.Size = new System.Drawing.Size(40, 20);
             this.testToolStripMenuItem.Text = "Test";
             this.testToolStripMenuItem.Click += new System.EventHandler(this.testToolStripMenuItem_Click);
+            // 
+            // wybórKoloruToolStripMenuItem
+            // 
+            this.wybórKoloruToolStripMenuItem.Name = "wybórKoloruToolStripMenuItem";
+            this.wybórKoloruToolStripMenuItem.Size = new System.Drawing.Size(91, 20);
+            this.wybórKoloruToolStripMenuItem.Text = "Wybór koloru";
+            this.wybórKoloruToolStripMenuItem.Click += new System.EventHandler(this.wybórKoloruToolStripMenuItem_Click);
             // 
             // potential_groupBox
             // 
@@ -488,7 +517,7 @@
             this.test_wyniki.Controls.Add(this.search);
             this.test_wyniki.Controls.Add(this.label7);
             this.test_wyniki.Controls.Add(this.nazwisko_textBox);
-            this.test_wyniki.Location = new System.Drawing.Point(13, 205);
+            this.test_wyniki.Location = new System.Drawing.Point(13, 261);
             this.test_wyniki.Name = "test_wyniki";
             this.test_wyniki.Size = new System.Drawing.Size(263, 107);
             this.test_wyniki.TabIndex = 13;
@@ -496,22 +525,13 @@
             this.test_wyniki.Text = "Wyniki";
             this.test_wyniki.Visible = false;
             // 
-            // nazwisko_textBox
+            // wynik_textBox
             // 
-            this.nazwisko_textBox.Location = new System.Drawing.Point(157, 19);
-            this.nazwisko_textBox.Name = "nazwisko_textBox";
-            this.nazwisko_textBox.Size = new System.Drawing.Size(100, 20);
-            this.nazwisko_textBox.TabIndex = 0;
-            // 
-            // label7
-            // 
-            this.label7.AutoEllipsis = true;
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(48, 22);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(103, 13);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "Wyszukaj nazwisko:";
+            this.wynik_textBox.Location = new System.Drawing.Point(18, 74);
+            this.wynik_textBox.Name = "wynik_textBox";
+            this.wynik_textBox.ReadOnly = true;
+            this.wynik_textBox.Size = new System.Drawing.Size(239, 20);
+            this.wynik_textBox.TabIndex = 3;
             // 
             // search
             // 
@@ -523,19 +543,203 @@
             this.search.UseVisualStyleBackColor = true;
             this.search.Click += new System.EventHandler(this.search_Click);
             // 
-            // wynik_textBox
+            // label7
             // 
-            this.wynik_textBox.Location = new System.Drawing.Point(18, 74);
-            this.wynik_textBox.Name = "wynik_textBox";
-            this.wynik_textBox.ReadOnly = true;
-            this.wynik_textBox.Size = new System.Drawing.Size(239, 20);
-            this.wynik_textBox.TabIndex = 3;
+            this.label7.AutoEllipsis = true;
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(48, 22);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(103, 13);
+            this.label7.TabIndex = 1;
+            this.label7.Text = "Wyszukaj nazwisko:";
+            // 
+            // nazwisko_textBox
+            // 
+            this.nazwisko_textBox.Location = new System.Drawing.Point(157, 19);
+            this.nazwisko_textBox.Name = "nazwisko_textBox";
+            this.nazwisko_textBox.Size = new System.Drawing.Size(100, 20);
+            this.nazwisko_textBox.TabIndex = 0;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Location = new System.Drawing.Point(38, 19);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(336, 61);
+            this.panel1.TabIndex = 14;
+            // 
+            // redLabel
+            // 
+            this.redLabel.AutoSize = true;
+            this.redLabel.BackColor = System.Drawing.Color.White;
+            this.redLabel.Location = new System.Drawing.Point(63, 93);
+            this.redLabel.Name = "redLabel";
+            this.redLabel.Size = new System.Drawing.Size(15, 13);
+            this.redLabel.TabIndex = 1;
+            this.redLabel.Text = "R";
+            // 
+            // greenLabel
+            // 
+            this.greenLabel.AutoSize = true;
+            this.greenLabel.BackColor = System.Drawing.Color.White;
+            this.greenLabel.Location = new System.Drawing.Point(63, 146);
+            this.greenLabel.Name = "greenLabel";
+            this.greenLabel.Size = new System.Drawing.Size(15, 13);
+            this.greenLabel.TabIndex = 2;
+            this.greenLabel.Text = "G";
+            // 
+            // blueLabel
+            // 
+            this.blueLabel.AutoSize = true;
+            this.blueLabel.BackColor = System.Drawing.Color.White;
+            this.blueLabel.Location = new System.Drawing.Point(58, 198);
+            this.blueLabel.Name = "blueLabel";
+            this.blueLabel.Size = new System.Drawing.Size(14, 13);
+            this.blueLabel.TabIndex = 3;
+            this.blueLabel.Text = "B";
+            // 
+            // redValue
+            // 
+            this.redValue.Location = new System.Drawing.Point(317, 91);
+            this.redValue.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.redValue.Name = "redValue";
+            this.redValue.Size = new System.Drawing.Size(43, 20);
+            this.redValue.TabIndex = 9;
+            this.redValue.ValueChanged += new System.EventHandler(this.numericValueChanged);
+            // 
+            // greenValue
+            // 
+            this.greenValue.Location = new System.Drawing.Point(317, 144);
+            this.greenValue.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.greenValue.Name = "greenValue";
+            this.greenValue.Size = new System.Drawing.Size(43, 20);
+            this.greenValue.TabIndex = 10;
+            this.greenValue.ValueChanged += new System.EventHandler(this.numericValueChanged);
+            // 
+            // blueValue
+            // 
+            this.blueValue.Location = new System.Drawing.Point(316, 196);
+            this.blueValue.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.blueValue.Name = "blueValue";
+            this.blueValue.Size = new System.Drawing.Size(43, 20);
+            this.blueValue.TabIndex = 11;
+            this.blueValue.ValueChanged += new System.EventHandler(this.numericValueChanged);
+            // 
+            // redScroll
+            // 
+            this.redScroll.LargeChange = 1;
+            this.redScroll.Location = new System.Drawing.Point(81, 93);
+            this.redScroll.Maximum = 255;
+            this.redScroll.Name = "redScroll";
+            this.redScroll.Size = new System.Drawing.Size(233, 18);
+            this.redScroll.TabIndex = 12;
+            this.redScroll.Value = 255;
+            this.redScroll.ValueChanged += new System.EventHandler(this.scrollValueChanged);
+            // 
+            // greenScroll
+            // 
+            this.greenScroll.LargeChange = 1;
+            this.greenScroll.Location = new System.Drawing.Point(81, 146);
+            this.greenScroll.Maximum = 255;
+            this.greenScroll.Name = "greenScroll";
+            this.greenScroll.Size = new System.Drawing.Size(233, 18);
+            this.greenScroll.TabIndex = 13;
+            this.greenScroll.Value = 255;
+            this.greenScroll.ValueChanged += new System.EventHandler(this.scrollValueChanged);
+            // 
+            // blueScroll
+            // 
+            this.blueScroll.LargeChange = 1;
+            this.blueScroll.Location = new System.Drawing.Point(81, 198);
+            this.blueScroll.Maximum = 255;
+            this.blueScroll.Name = "blueScroll";
+            this.blueScroll.Size = new System.Drawing.Size(233, 18);
+            this.blueScroll.TabIndex = 14;
+            this.blueScroll.Value = 255;
+            this.blueScroll.ValueChanged += new System.EventHandler(this.scrollValueChanged);
+            // 
+            // setColor
+            // 
+            this.setColor.Location = new System.Drawing.Point(140, 233);
+            this.setColor.Name = "setColor";
+            this.setColor.Size = new System.Drawing.Size(123, 23);
+            this.setColor.TabIndex = 15;
+            this.setColor.Text = "Pobierz";
+            this.setColor.UseVisualStyleBackColor = true;
+            this.setColor.Click += new System.EventHandler(this.setPanelColor);
+            // 
+            // colorGroupBox
+            // 
+            this.colorGroupBox.Controls.Add(this.label14);
+            this.colorGroupBox.Controls.Add(this.redLabel);
+            this.colorGroupBox.Controls.Add(this.panel1);
+            this.colorGroupBox.Controls.Add(this.setColor);
+            this.colorGroupBox.Controls.Add(this.greenLabel);
+            this.colorGroupBox.Controls.Add(this.blueScroll);
+            this.colorGroupBox.Controls.Add(this.blueLabel);
+            this.colorGroupBox.Controls.Add(this.greenScroll);
+            this.colorGroupBox.Controls.Add(this.redValue);
+            this.colorGroupBox.Controls.Add(this.redScroll);
+            this.colorGroupBox.Controls.Add(this.greenValue);
+            this.colorGroupBox.Controls.Add(this.blueValue);
+            this.colorGroupBox.Location = new System.Drawing.Point(13, 27);
+            this.colorGroupBox.Name = "colorGroupBox";
+            this.colorGroupBox.Size = new System.Drawing.Size(397, 335);
+            this.colorGroupBox.TabIndex = 16;
+            this.colorGroupBox.TabStop = false;
+            this.colorGroupBox.Text = "kolor";
+            this.colorGroupBox.Visible = false;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.White;
+            this.label14.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label14.Location = new System.Drawing.Point(137, 272);
+            this.label14.Name = "label14";
+            this.label14.Padding = new System.Windows.Forms.Padding(20, 10, 40, 10);
+            this.label14.Size = new System.Drawing.Size(127, 33);
+            this.label14.TabIndex = 16;
+            this.label14.Text = "255,255,255";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.graphicButton);
+            this.panel2.Location = new System.Drawing.Point(438, 38);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(279, 330);
+            this.panel2.TabIndex = 17;
+            // 
+            // graphicButton
+            // 
+            this.graphicButton.Location = new System.Drawing.Point(95, 307);
+            this.graphicButton.Name = "graphicButton";
+            this.graphicButton.Size = new System.Drawing.Size(75, 23);
+            this.graphicButton.TabIndex = 0;
+            this.graphicButton.Text = "Start";
+            this.graphicButton.UseVisualStyleBackColor = true;
+            this.graphicButton.Click += new System.EventHandler(this.graphicButton_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(355, 380);
+            this.ClientSize = new System.Drawing.Size(777, 426);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.colorGroupBox);
             this.Controls.Add(this.test_wyniki);
             this.Controls.Add(this.jednostajny_groupBox);
             this.Controls.Add(this.kinetic_groupBox);
@@ -554,6 +758,12 @@
             this.jednostajny_groupBox.PerformLayout();
             this.test_wyniki.ResumeLayout(false);
             this.test_wyniki.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.redValue)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.greenValue)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.blueValue)).EndInit();
+            this.colorGroupBox.ResumeLayout(false);
+            this.colorGroupBox.PerformLayout();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -609,6 +819,22 @@
         private System.Windows.Forms.Button search;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox nazwisko_textBox;
+        private System.Windows.Forms.ToolStripMenuItem wybórKoloruToolStripMenuItem;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label blueLabel;
+        private System.Windows.Forms.Label greenLabel;
+        private System.Windows.Forms.Label redLabel;
+        private System.Windows.Forms.NumericUpDown blueValue;
+        private System.Windows.Forms.NumericUpDown greenValue;
+        private System.Windows.Forms.NumericUpDown redValue;
+        private System.Windows.Forms.HScrollBar redScroll;
+        private System.Windows.Forms.HScrollBar greenScroll;
+        private System.Windows.Forms.HScrollBar blueScroll;
+        private System.Windows.Forms.Button setColor;
+        private System.Windows.Forms.GroupBox colorGroupBox;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button graphicButton;
     }
 }
 

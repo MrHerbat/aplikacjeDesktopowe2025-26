@@ -23,23 +23,34 @@ namespace Formularz4
         private void finish_Click(object sender, EventArgs e)
         {
             punkty = 0;
+            int zad3Punkty = 0;
             if (zadanie1_comboBox.SelectedIndex == 3)
                 punkty += 1;
             if (odpowiedz_c.Checked)
                 punkty += 1;
             foreach (var item in zadanie3_checkedListBox.SelectedItems)
             {
-                if(!item.ToString().Equals("Praca") || !item.ToString().Equals("Energia Kinetyczna"))
+                if(item.ToString().Equals("Praca") || item.ToString().Equals("Energia Kinetyczna"))
                 {
-                    punkty++;
+                    zad3Punkty -= 1;
+                }
+                else
+                {
+                    zad3Punkty += 1;
                 }
             }
-            if (zadanie4_textBox.Text.Equals("100J") || zadanie4_textBox.Text.Equals("100 J"))
+            if (zad3Punkty >= 3)
+            {
+                punkty += 2;
+            }else if (zad3Punkty >= 1)
+            {
+                punkty += 1;
+            }
+            if (zadanie4_textBox.Text.Contains("100") && zadanie4_textBox.Text.Contains("J"))
                 punkty += 2;
 
             var path = "../../wyniki.txt";
             File.AppendAllText(path, "\n"+surname+" "+punkty+"pkt");
-
             this.Close();
         }
     }

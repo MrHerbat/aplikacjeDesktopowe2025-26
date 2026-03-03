@@ -1,0 +1,10 @@
+Z:\aplikacjeDesktopowe2025-26\Drawing\bin\Debug\Drawing.exe.config
+Z:\aplikacjeDesktopowe2025-26\Drawing\bin\Debug\Drawing.exe
+Z:\aplikacjeDesktopowe2025-26\Drawing\bin\Debug\Drawing.pdb
+Z:\aplikacjeDesktopowe2025-26\Drawing\obj\Debug\Drawing.csproj.AssemblyReference.cache
+Z:\aplikacjeDesktopowe2025-26\Drawing\obj\Debug\Drawing.Properties.Resources.resources
+Z:\aplikacjeDesktopowe2025-26\Drawing\obj\Debug\Drawing.csproj.GenerateResource.cache
+Z:\aplikacjeDesktopowe2025-26\Drawing\obj\Debug\Drawing.csproj.CoreCompileInputs.cache
+Z:\aplikacjeDesktopowe2025-26\Drawing\obj\Debug\Drawing.exe
+Z:\aplikacjeDesktopowe2025-26\Drawing\obj\Debug\Drawing.pdb
+Z:\aplikacjeDesktopowe2025-26\Drawing\obj\Debug\Drawing.exe.config

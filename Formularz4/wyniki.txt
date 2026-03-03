@@ -1,2 +1,5 @@
 Kowalski 4pt
 Testowicz 5pkt
+Mrożek 5pkt
+Klinek 2pkt
+Kopiec 5pkt
