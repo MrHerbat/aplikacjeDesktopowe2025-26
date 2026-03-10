@@ -18,6 +18,13 @@ namespace Formularz4
         private readonly float g = 9.81f;
         private int ruchChoice;
         Form2 form = new Form2();
+        private int ballY = 50;
+        private System.Windows.Forms.Timer animationFallTimer,animationDriveTimer;
+
+        private float blockX = 50f;    
+        private float velocity = 0f;  
+        private float acceleration = 0.5f; 
+        private bool isAnimating = true;
         public Form1()
         {
             InitializeComponent();
@@ -28,7 +35,86 @@ namespace Formularz4
             redValue.Text = redScroll.Value.ToString();
             greenValue.Text = greenScroll.Value.ToString();
             blueValue.Text = blueScroll.Value.ToString();
-            panel2.Paint += new PaintEventHandler(drawStaticPanel);
+
+            animationFallTimer = new System.Windows.Forms.Timer();
+            animationFallTimer.Interval = 31;
+            animationFallTimer.Tick += AnimationFallTimer_Tick;
+            animationDriveTimer = new System.Windows.Forms.Timer();
+            animationDriveTimer.Interval = 31;
+            animationDriveTimer.Tick += AnimationDriveTimer_Tick;
+            panel2.Paint += panel2_Paint;
+            panel3.Paint += panel3_Paint;
+        }
+        private void AnimationFallTimer_Tick(object sender, EventArgs e)
+        {
+            if (ballY <= 300)
+            {
+                ballY += 5; 
+                panel2.Invalidate(); 
+            }
+            else
+            {
+                animationFallTimer.Stop();
+            }
+        }
+        private void AnimationDriveTimer_Tick(object sender, EventArgs e)
+        {
+            if (!isAnimating) return;
+
+            int midpoint = panel3.Width / 2;
+            int targetX = panel3.Width - 60;
+
+            if (blockX < midpoint)
+            {
+                velocity += acceleration;
+            }
+            else
+            {
+                velocity -= acceleration;
+
+                if (velocity < 0.5f) velocity = 0.5f;
+            }
+
+            blockX += velocity;
+
+            if (blockX >= targetX)
+            {
+                blockX = targetX;
+                isAnimating = false;
+                animationDriveTimer.Stop();
+            }
+
+            panel3.Invalidate();
+        }
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+            Graphics g = e.Graphics;
+
+            g.DrawLine(Pens.Black, 0, 300, 400, 300);
+
+            int ballX = (panel2.Width / 2) - 20;
+            g.FillEllipse(Brushes.Blue, ballX, ballY - 45, 40, 40);
+        }
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+            int blockWidth = 40;
+            int yPos = (panel3.Height/2)-(blockWidth/2);
+
+            using (SolidBrush brush = new SolidBrush(Color.RoyalBlue))
+            {
+                e.Graphics.FillRectangle(brush, (int)blockX, yPos, blockWidth, blockWidth);
+            }
+        }
+        private void graphicButton_Click(object sender, EventArgs e)
+        {
+            ballY = 50;
+            animationFallTimer.Start();
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            blockX = 50f;
+            isAnimating = true;
+            animationDriveTimer.Start();
         }
 
         private void potencjalnaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -186,7 +272,6 @@ namespace Formularz4
                 wynik_textBox.Text = "Jeszcze nie ukończyłeś testu!";
                 Form2 form = new Form2();
                 form.surname = nazwisko;
-                this.Opacity = 0;
                 form.Show();
             }
         }
@@ -264,21 +349,22 @@ namespace Formularz4
         {
             var d = e.Graphics;
             int height = 50;
-            while (height <= 300)
-            {
-                drawRect((panel2.Width / 2) - 20, height-40, e);
-                drawLine(0, 300, 400, 300, e);
-                d.Clear(Color.White);
-                panel2.Refresh();
-                height += 25;
-                Thread.Sleep(200);
-            }
+            drawRect((panel2.Width / 2) - 20, height-40, e);
+            drawLine(0, 300, 400, 300, e);
+            d.Clear(Color.White);
+            height += 25;
+            Thread.Sleep(100);
+            panel2.Refresh();
         }
 
-        private void graphicButton_Click(object sender, EventArgs e)
+        private void energiaKinetycznaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            panel2.Paint += new PaintEventHandler(drawAnimatedPanel);
-            panel2.Refresh();
+            panel3.Visible = true;
+        }
+
+        private void energiaPotencjalnaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            panel2.Visible = true;
         }
     }
 }

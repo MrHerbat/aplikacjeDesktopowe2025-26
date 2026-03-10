@@ -39,6 +39,8 @@
             this.czasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.testToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.wybórKoloruToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.graficznePrzedstawienieToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.energiaPotencjalnaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.potential_groupBox = new System.Windows.Forms.GroupBox();
             this.potential = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
@@ -91,7 +93,13 @@
             this.colorGroupBox = new System.Windows.Forms.GroupBox();
             this.label14 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.graphicButton = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.energiaKinetycznaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.potential_groupBox.SuspendLayout();
             this.kinetic_groupBox.SuspendLayout();
@@ -102,6 +110,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.blueValue)).BeginInit();
             this.colorGroupBox.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -109,7 +118,8 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.obliczeniaToolStripMenuItem,
             this.testToolStripMenuItem,
-            this.wybórKoloruToolStripMenuItem});
+            this.wybórKoloruToolStripMenuItem,
+            this.graficznePrzedstawienieToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(777, 24);
@@ -137,14 +147,14 @@
             // potencjalnaToolStripMenuItem
             // 
             this.potencjalnaToolStripMenuItem.Name = "potencjalnaToolStripMenuItem";
-            this.potencjalnaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.potencjalnaToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.potencjalnaToolStripMenuItem.Text = "Potencjalna";
             this.potencjalnaToolStripMenuItem.Click += new System.EventHandler(this.potencjalnaToolStripMenuItem_Click);
             // 
             // kinetycznaToolStripMenuItem
             // 
             this.kinetycznaToolStripMenuItem.Name = "kinetycznaToolStripMenuItem";
-            this.kinetycznaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.kinetycznaToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.kinetycznaToolStripMenuItem.Text = "Kinetyczna";
             this.kinetycznaToolStripMenuItem.Click += new System.EventHandler(this.kinetycznaToolStripMenuItem_Click);
             // 
@@ -192,6 +202,22 @@
             this.wybórKoloruToolStripMenuItem.Size = new System.Drawing.Size(91, 20);
             this.wybórKoloruToolStripMenuItem.Text = "Wybór koloru";
             this.wybórKoloruToolStripMenuItem.Click += new System.EventHandler(this.wybórKoloruToolStripMenuItem_Click);
+            // 
+            // graficznePrzedstawienieToolStripMenuItem
+            // 
+            this.graficznePrzedstawienieToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.energiaPotencjalnaToolStripMenuItem,
+            this.energiaKinetycznaToolStripMenuItem});
+            this.graficznePrzedstawienieToolStripMenuItem.Name = "graficznePrzedstawienieToolStripMenuItem";
+            this.graficznePrzedstawienieToolStripMenuItem.Size = new System.Drawing.Size(149, 20);
+            this.graficznePrzedstawienieToolStripMenuItem.Text = "Graficzne przedstawienie";
+            // 
+            // energiaPotencjalnaToolStripMenuItem
+            // 
+            this.energiaPotencjalnaToolStripMenuItem.Name = "energiaPotencjalnaToolStripMenuItem";
+            this.energiaPotencjalnaToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.energiaPotencjalnaToolStripMenuItem.Text = "Energia potencjalna";
+            this.energiaPotencjalnaToolStripMenuItem.Click += new System.EventHandler(this.energiaPotencjalnaToolStripMenuItem_Click);
             // 
             // potential_groupBox
             // 
@@ -717,11 +743,42 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.label17);
+            this.panel2.Controls.Add(this.label16);
+            this.panel2.Controls.Add(this.label15);
             this.panel2.Controls.Add(this.graphicButton);
             this.panel2.Location = new System.Drawing.Point(438, 38);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(279, 330);
             this.panel2.TabIndex = 17;
+            this.panel2.Visible = false;
+            // 
+            // label17
+            // 
+            this.label17.AllowDrop = true;
+            this.label17.Location = new System.Drawing.Point(213, 135);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(51, 22);
+            this.label17.TabIndex = 3;
+            this.label17.Text = "Ep = Ek";
+            // 
+            // label16
+            // 
+            this.label16.AllowDrop = true;
+            this.label16.Location = new System.Drawing.Point(213, 268);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(51, 26);
+            this.label16.TabIndex = 2;
+            this.label16.Text = "Ep = 0 Ek = max";
+            // 
+            // label15
+            // 
+            this.label15.AllowDrop = true;
+            this.label15.Location = new System.Drawing.Point(213, 10);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(63, 36);
+            this.label15.TabIndex = 1;
+            this.label15.Text = "Ep = max Ek = 0";
             // 
             // graphicButton
             // 
@@ -733,11 +790,39 @@
             this.graphicButton.UseVisualStyleBackColor = true;
             this.graphicButton.Click += new System.EventHandler(this.graphicButton_Click);
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.button1);
+            this.panel3.Location = new System.Drawing.Point(13, 374);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(704, 240);
+            this.panel3.TabIndex = 18;
+            this.panel3.Visible = false;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(299, 214);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Start";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // energiaKinetycznaToolStripMenuItem
+            // 
+            this.energiaKinetycznaToolStripMenuItem.Name = "energiaKinetycznaToolStripMenuItem";
+            this.energiaKinetycznaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.energiaKinetycznaToolStripMenuItem.Text = "Energia kinetyczna";
+            this.energiaKinetycznaToolStripMenuItem.Click += new System.EventHandler(this.energiaKinetycznaToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(777, 426);
+            this.ClientSize = new System.Drawing.Size(777, 626);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.colorGroupBox);
             this.Controls.Add(this.test_wyniki);
@@ -764,6 +849,7 @@
             this.colorGroupBox.ResumeLayout(false);
             this.colorGroupBox.PerformLayout();
             this.panel2.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -835,6 +921,14 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button graphicButton;
+        private System.Windows.Forms.ToolStripMenuItem graficznePrzedstawienieToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem energiaPotencjalnaToolStripMenuItem;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ToolStripMenuItem energiaKinetycznaToolStripMenuItem;
     }
 }
 
