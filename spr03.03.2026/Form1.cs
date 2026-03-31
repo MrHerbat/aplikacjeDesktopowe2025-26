@@ -65,7 +65,7 @@ namespace spr03._03._2026
             string path = "../../dane_studenta.txt";
             
             string nazwisko = textBox1.Text;
-            string uczelnia = listBox1.SelectedItem.ToString();
+            string uczelnia = listBox2.SelectedItem.ToString();
             string tryb = "";
             if (radioButton1.Checked)
                 tryb = radioButton1.Text;

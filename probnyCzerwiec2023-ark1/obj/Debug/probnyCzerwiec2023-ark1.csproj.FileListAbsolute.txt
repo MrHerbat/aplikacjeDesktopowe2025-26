@@ -1,0 +1,11 @@
+Z:\aplikacjeDesktopowe2025-26\probnyCzerwiec2023-ark1\bin\Debug\probnyCzerwiec2023-ark1.exe.config
+Z:\aplikacjeDesktopowe2025-26\probnyCzerwiec2023-ark1\bin\Debug\probnyCzerwiec2023-ark1.exe
+Z:\aplikacjeDesktopowe2025-26\probnyCzerwiec2023-ark1\bin\Debug\probnyCzerwiec2023-ark1.pdb
+Z:\aplikacjeDesktopowe2025-26\probnyCzerwiec2023-ark1\obj\Debug\probnyCzerwiec2023-ark1.csproj.AssemblyReference.cache
+Z:\aplikacjeDesktopowe2025-26\probnyCzerwiec2023-ark1\obj\Debug\probnyCzerwiec2023_ark1.Form1.resources
+Z:\aplikacjeDesktopowe2025-26\probnyCzerwiec2023-ark1\obj\Debug\probnyCzerwiec2023_ark1.Properties.Resources.resources
+Z:\aplikacjeDesktopowe2025-26\probnyCzerwiec2023-ark1\obj\Debug\probnyCzerwiec2023-ark1.csproj.GenerateResource.cache
+Z:\aplikacjeDesktopowe2025-26\probnyCzerwiec2023-ark1\obj\Debug\probnyCzerwiec2023-ark1.csproj.CoreCompileInputs.cache
+Z:\aplikacjeDesktopowe2025-26\probnyCzerwiec2023-ark1\obj\Debug\probnyCzerwiec2023-ark1.exe
+Z:\aplikacjeDesktopowe2025-26\probnyCzerwiec2023-ark1\obj\Debug\probnyCzerwiec2023-ark1.pdb
+Z:\aplikacjeDesktopowe2025-26\probnyCzerwiec2023-ark1\obj\Debug\probnyCzerwiec2023-ark1.exe.config

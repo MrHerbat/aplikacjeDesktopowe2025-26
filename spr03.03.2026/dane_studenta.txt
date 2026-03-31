@@ -1,2 +1,3 @@
 Nazwisko: Kowalski | Uczelnia: Uniwersytet | Tryb Studiowania: Dzienne
 Nazwisko: Michalski | Uczelnia: Akademia | Tryb Studiowania: Zaoczne
+Nazwisko: k | Uczelnia: Politechnika | Tryb Studiowania: Dzienne

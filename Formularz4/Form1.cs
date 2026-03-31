@@ -119,10 +119,8 @@ namespace Formularz4
 
         private void potencjalnaToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            hideEverything();
             potential_groupBox.Visible = true;
-            colorGroupBox.Visible = false;
-            kinetic_groupBox.Visible = false;
-            jednostajny_groupBox.Visible = false;
         }
 
         private void potencjalna_Click(object sender, EventArgs e)
@@ -176,9 +174,7 @@ namespace Formularz4
 
         private void prędkośćToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            potential_groupBox.Visible = false;
-            kinetic_groupBox.Visible = false;
-            colorGroupBox.Visible = false;
+            hideEverything();
             jednostajny_groupBox.Visible = true;
             ruchChoice = 1;
             rjp_a.Text = "Czas:";
@@ -191,10 +187,8 @@ namespace Formularz4
 
         private void drogaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            potential_groupBox.Visible = false;
-            kinetic_groupBox.Visible = false;
+            hideEverything();
             jednostajny_groupBox.Visible = true;
-            colorGroupBox.Visible = false;
             ruchChoice = 2;
             rjp_a.Text = "Czas:";
             rjp_a_label.Text = "s";
@@ -206,10 +200,8 @@ namespace Formularz4
 
         private void czasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            potential_groupBox.Visible = false;
-            kinetic_groupBox.Visible = false;
+            hideEverything();
             jednostajny_groupBox.Visible = true;
-            colorGroupBox.Visible = false;
             ruchChoice = 3;
             rjp_a.Text = "Prędkość:";
             rjp_a_label.Text = "m/s";
@@ -255,6 +247,7 @@ namespace Formularz4
 
         private void testToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            hideEverything();
             test_wyniki.Visible = true;
             nazwisko_textBox.Enabled = true;
             search.Enabled = true;
@@ -270,10 +263,10 @@ namespace Formularz4
             else
             {
                 wynik_textBox.Text = "Jeszcze nie ukończyłeś testu!";
-                Form2 form = new Form2();
-                form.surname = nazwisko;
-                form.Show();
             }
+            Form2 form = new Form2();
+            form.surname = nazwisko;
+            form.Show();
         }
         public string searchFile(string surname)
         {
@@ -297,9 +290,7 @@ namespace Formularz4
 
         private void wybórKoloruToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            potential_groupBox.Visible = false;
-            kinetic_groupBox.Visible = false;
-            jednostajny_groupBox.Visible = false;
+            hideEverything();
             colorGroupBox.Visible = true;
             panelColorChange(255,255,255);
         }
@@ -308,6 +299,7 @@ namespace Formularz4
             redValue.Text = redScroll.Value.ToString();
             greenValue.Text = greenScroll.Value.ToString();
             blueValue.Text = blueScroll.Value.ToString();
+            panelColorChange(redScroll.Value, greenScroll.Value, blueScroll.Value);
         }
         private void numericValueChanged(object sender, EventArgs e)
         {
@@ -359,12 +351,24 @@ namespace Formularz4
 
         private void energiaKinetycznaToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            hideEverything();
             panel3.Visible = true;
         }
 
         private void energiaPotencjalnaToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            hideEverything();
             panel2.Visible = true;
+        }
+        private void hideEverything()
+        {
+            jednostajny_groupBox.Visible = false;
+            kinetic_groupBox.Visible = false;
+            potential_groupBox.Visible = false;
+            colorGroupBox.Visible = false;
+            panel2.Visible = false;
+            panel3.Visible = false;
+            test_wyniki.Visible = false;
         }
     }
 }

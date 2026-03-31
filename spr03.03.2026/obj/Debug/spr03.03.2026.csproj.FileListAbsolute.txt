@@ -9,3 +9,14 @@ C:\Users\Uczeń\Desktop\spr03.03.2026\obj\Debug\spr03.03.2026.csproj.CoreCompile
 C:\Users\Uczeń\Desktop\spr03.03.2026\obj\Debug\spr03.03.2026.exe
 C:\Users\Uczeń\Desktop\spr03.03.2026\obj\Debug\spr03.03.2026.pdb
 C:\Users\Uczeń\Desktop\spr03.03.2026\obj\Debug\spr03.03.2026.exe.config
+Z:\aplikacjeDesktopowe2025-26\spr03.03.2026\bin\Debug\spr03.03.2026.exe.config
+Z:\aplikacjeDesktopowe2025-26\spr03.03.2026\bin\Debug\spr03.03.2026.exe
+Z:\aplikacjeDesktopowe2025-26\spr03.03.2026\bin\Debug\spr03.03.2026.pdb
+Z:\aplikacjeDesktopowe2025-26\spr03.03.2026\obj\Debug\spr03.03.2026.csproj.AssemblyReference.cache
+Z:\aplikacjeDesktopowe2025-26\spr03.03.2026\obj\Debug\spr03.03.2026.exe.config
+Z:\aplikacjeDesktopowe2025-26\spr03.03.2026\obj\Debug\spr03._03._2026.Form1.resources
+Z:\aplikacjeDesktopowe2025-26\spr03.03.2026\obj\Debug\spr03._03._2026.Properties.Resources.resources
+Z:\aplikacjeDesktopowe2025-26\spr03.03.2026\obj\Debug\spr03.03.2026.csproj.GenerateResource.cache
+Z:\aplikacjeDesktopowe2025-26\spr03.03.2026\obj\Debug\spr03.03.2026.csproj.CoreCompileInputs.cache
+Z:\aplikacjeDesktopowe2025-26\spr03.03.2026\obj\Debug\spr03.03.2026.exe
+Z:\aplikacjeDesktopowe2025-26\spr03.03.2026\obj\Debug\spr03.03.2026.pdb

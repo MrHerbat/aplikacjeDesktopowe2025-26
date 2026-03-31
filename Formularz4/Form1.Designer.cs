@@ -41,6 +41,7 @@
             this.wybórKoloruToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.graficznePrzedstawienieToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.energiaPotencjalnaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.energiaKinetycznaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.potential_groupBox = new System.Windows.Forms.GroupBox();
             this.potential = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
@@ -99,7 +100,6 @@
             this.graphicButton = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.energiaKinetycznaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.potential_groupBox.SuspendLayout();
             this.kinetic_groupBox.SuspendLayout();
@@ -218,6 +218,13 @@
             this.energiaPotencjalnaToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.energiaPotencjalnaToolStripMenuItem.Text = "Energia potencjalna";
             this.energiaPotencjalnaToolStripMenuItem.Click += new System.EventHandler(this.energiaPotencjalnaToolStripMenuItem_Click);
+            // 
+            // energiaKinetycznaToolStripMenuItem
+            // 
+            this.energiaKinetycznaToolStripMenuItem.Name = "energiaKinetycznaToolStripMenuItem";
+            this.energiaKinetycznaToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.energiaKinetycznaToolStripMenuItem.Text = "Energia kinetyczna";
+            this.energiaKinetycznaToolStripMenuItem.Click += new System.EventHandler(this.energiaKinetycznaToolStripMenuItem_Click);
             // 
             // potential_groupBox
             // 
@@ -809,13 +816,6 @@
             this.button1.Text = "Start";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // energiaKinetycznaToolStripMenuItem
-            // 
-            this.energiaKinetycznaToolStripMenuItem.Name = "energiaKinetycznaToolStripMenuItem";
-            this.energiaKinetycznaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.energiaKinetycznaToolStripMenuItem.Text = "Energia kinetyczna";
-            this.energiaKinetycznaToolStripMenuItem.Click += new System.EventHandler(this.energiaKinetycznaToolStripMenuItem_Click);
             // 
             // Form1
             // 

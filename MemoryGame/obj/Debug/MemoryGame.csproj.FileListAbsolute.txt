@@ -1,0 +1,11 @@
+Z:\aplikacjeDesktopowe2025-26\MemoryGame\bin\Debug\MemoryGame.exe.config
+Z:\aplikacjeDesktopowe2025-26\MemoryGame\bin\Debug\MemoryGame.exe
+Z:\aplikacjeDesktopowe2025-26\MemoryGame\bin\Debug\MemoryGame.pdb
+Z:\aplikacjeDesktopowe2025-26\MemoryGame\obj\Debug\MemoryGame.csproj.AssemblyReference.cache
+Z:\aplikacjeDesktopowe2025-26\MemoryGame\obj\Debug\MemoryGame.Form1.resources
+Z:\aplikacjeDesktopowe2025-26\MemoryGame\obj\Debug\MemoryGame.Properties.Resources.resources
+Z:\aplikacjeDesktopowe2025-26\MemoryGame\obj\Debug\MemoryGame.csproj.GenerateResource.cache
+Z:\aplikacjeDesktopowe2025-26\MemoryGame\obj\Debug\MemoryGame.csproj.CoreCompileInputs.cache
+Z:\aplikacjeDesktopowe2025-26\MemoryGame\obj\Debug\MemoryGame.exe
+Z:\aplikacjeDesktopowe2025-26\MemoryGame\obj\Debug\MemoryGame.pdb
+Z:\aplikacjeDesktopowe2025-26\MemoryGame\obj\Debug\MemoryGame.exe.config

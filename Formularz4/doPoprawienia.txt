@@ -1,0 +1,3 @@
+Quiz ma być wykonywany nawet jeśli nazwisko istnieje. Jeśli ilość punktów jest większa od poprzedniego ma nadpisać
+Jakieś czyszczenie formularza
+Kolory??????
