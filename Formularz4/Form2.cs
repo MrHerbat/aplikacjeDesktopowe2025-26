@@ -50,8 +50,43 @@ namespace Formularz4
                 punkty += 2;
 
             var path = "../../wyniki.txt";
-            File.AppendAllText(path, "\n"+surname+" "+punkty+"pkt");
+            int temp = searchFile(surname);
+            if (temp!=-1)
+            {
+                lineChanger(surname + " " + punkty + "pkt", path, temp);
+            }
+            else
+            {
+                File.AppendAllText(path, "\n" + surname + " " + punkty + "pkt");
+            }
             this.Close();
         }
+        static void lineChanger(string newText, string fileName, int line_to_edit)
+        {
+            string[] arrLine = File.ReadAllLines(fileName);
+            arrLine[line_to_edit] = newText;
+            File.WriteAllLines(fileName, arrLine);
+        }
+        public int searchFile(string surname)
+        {
+            var file = File.OpenRead("../../wyniki.txt");
+            int x = 0;
+            var sr = new StreamReader(file);
+            string line = sr.ReadLine();
+            while (line != null)
+            {
+                string temp = line.Split(' ')[0];
+                if (temp.Equals(surname))
+                {
+                    sr.Close();
+                    return x;
+                }
+                x++;
+                line = sr.ReadLine();
+            }
+            sr.Close();
+            return -1;
+        }
     }
+
 }
